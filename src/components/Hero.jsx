@@ -19,9 +19,15 @@ const Hero = () => {
           Frontend Web Developer.
         </h3>
         <div className='flex text-4xl justify-center gap-4 py-3 text-gray-700 dark:text-gray-300'>
-          <RiLinkedinBoxFill />
-          <RiGithubFill />
-          <RiDribbbleLine />
+          <a href='https://www.linkedin.com/in/adal-obregon/' target='_blank'>
+            <RiLinkedinBoxFill />
+          </a>
+          <a href='https://github.com/AdalObregon' target='_blank'>
+            <RiGithubFill />
+          </a>
+          <a href='https://dribbble.com/adalobre98' target='_blank'>
+            <RiDribbbleLine />
+          </a>
         </div>
       </div>
     </>
