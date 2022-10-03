@@ -1,6 +1,6 @@
 // import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
-import Proyectos from '../data/projects.json';
+import Proyectos from '../data/projects';
 const Projects = () => {
   // const [proyectos, setProyectos] = useState([]);
 
