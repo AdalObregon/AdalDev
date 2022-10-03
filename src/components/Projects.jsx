@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 const Projects = () => {
   const [proyectos, setProyectos] = useState([]);
 
   useEffect(() => {
     const obtenerProyectos = async () => {
-      const url = '/data/projects.json';
+      const url = './src/projects.json';
       const result = await axios.get(url);
-       setProyectos( result.data);
-      console.log(result)
+      setProyectos(result.data);
+      console.log(result);
     };
     obtenerProyectos();
   }, []);

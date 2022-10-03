@@ -30,15 +30,15 @@ const Skills = () => {
             <h2>Backend</h2>
           </div>
           <div className='flex justify-center text-5xl mb-4 gap-3'>
-            <i class='devicon-java-plain colored'></i>
-            <i class='devicon-spring-plain colored'></i>
-            <i class='devicon-express-original text-white'></i>
-            <i class='devicon-mysql-plain text-white'></i>
+            <i className='devicon-java-plain colored'></i>
+            <i className='devicon-spring-plain colored'></i>
+            <i className='devicon-express-original text-white'></i>
+            <i className='devicon-mysql-plain text-white'></i>
           </div>
           <div className='flex justify-center text-5xl gap-3'>
-            <i class='devicon-nodejs-plain colored'></i>
-            <i class='devicon-sequelize-plain colored'></i>
-            <i class='devicon-python-plain colored'></i>
+            <i className='devicon-nodejs-plain colored'></i>
+            <i className='devicon-sequelize-plain colored'></i>
+            <i className='devicon-python-plain colored'></i>
           </div>
         </div>
         <div className='bg-gradient-to-b from-gray-800 to-gray-900 h-fit p-12 mb-20 rounded-xl hover:scale-110 transition delay-150 duration-300 ease-in-out'>
@@ -46,16 +46,16 @@ const Skills = () => {
             <h2>Other</h2>
           </div>
           <div className='flex justify-center text-5xl mb-4 gap-3 '>
-            <i class='devicon-bash-plain text-white'></i>
-            <i class='devicon-git-plain colored'></i>
-            <i class='devicon-github-original text-white'></i>
-            <i class='devicon-jira-plain colored'></i>
+            <i className='devicon-bash-plain text-white'></i>
+            <i className='devicon-git-plain colored'></i>
+            <i className='devicon-github-original text-white'></i>
+            <i className='devicon-jira-plain colored'></i>
           </div>
           <div className='flex justify-center text-5xl gap-3'>
-            <i class='devicon-npm-original-wordmark colored'></i>
-            <i class='devicon-photoshop-plain colored'></i>
-            <i class='devicon-vscode-plain colored'></i>
-            <i class='devicon-intellij-plain colored'></i>
+            <i className='devicon-npm-original-wordmark colored'></i>
+            <i className='devicon-photoshop-plain colored'></i>
+            <i className='devicon-vscode-plain colored'></i>
+            <i className='devicon-intellij-plain colored'></i>
           </div>
         </div>
       </div>
