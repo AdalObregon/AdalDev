@@ -12,16 +12,16 @@ const Skills = () => {
             <h2>Frontend</h2>
           </div>
           <div className='flex justify-center text-5xl mb-4 gap-3'>
-            <i class='devicon-html5-plain colored'></i>
-            <i class='devicon-css3-plain colored'></i>
-            <i class='devicon-javascript-plain colored'></i>
-            <i class='devicon-tailwindcss-plain colored'></i>
+            <i className='devicon-html5-plain colored'></i>
+            <i className='devicon-css3-plain colored'></i>
+            <i className='devicon-javascript-plain colored'></i>
+            <i className='devicon-tailwindcss-plain colored'></i>
           </div>
           <div className='flex justify-center text-5xl gap-3'>
-            <i class='devicon-bootstrap-plain colored'></i>
-            <i class='devicon-react-original colored'></i>
-            <i class='devicon-figma-plain colored'></i>
-            <i class='devicon-sass-original colored'></i>
+            <i className='devicon-bootstrap-plain colored'></i>
+            <i className='devicon-react-original colored'></i>
+            <i className='devicon-figma-plain colored'></i>
+            <i className='devicon-sass-original colored'></i>
           </div>
         </div>
 
