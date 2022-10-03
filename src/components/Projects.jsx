@@ -14,12 +14,22 @@ const Projects = () => {
   //   obtenerProyectos();
   // }, []);
 
+  // useEffect(() => {
+  //   const obtenerProyectos = async () => {
+  //     const url = 'data/projects.json';
+  //     const response = await fetch(url);
+  //     const result = await response.json();
+  //     setProyectos(result);
+  //   };
+  //   obtenerProyectos();
+  // }, []);
+
   useEffect(() => {
-    const obtenerProyectos = async () => {
+    const obtenerProyectos = () => {
       const url = 'data/projects.json';
-      const response = await fetch(url);
-      const result = await response.json();
-      setProyectos(result);
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => setProyectos(data));
     };
     obtenerProyectos();
   }, []);
