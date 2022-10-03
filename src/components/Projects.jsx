@@ -4,15 +4,25 @@ import axios from 'axios';
 const Projects = () => {
   const [proyectos, setProyectos] = useState([]);
 
+  // useEffect(() => {
+  //   const obtenerProyectos = async () => {
+  //     const url = 'data/projects.json';
+  //     const result = await axios.get(url);
+  //     setProyectos(result.data);
+  //     console.log(result)
+  //   };
+  //   obtenerProyectos();
+  // }, []);
+
   useEffect(() => {
     const obtenerProyectos = async () => {
       const url = 'data/projects.json';
-      const result = await axios.get(url);
-      setProyectos(result.data);
+      const response = await fetch(url);
+      const result = await response.json();
+      setProyectos(result);
     };
     obtenerProyectos();
   }, []);
-
 
   return (
     <>
@@ -30,14 +40,24 @@ const Projects = () => {
               <h2 className='text-2xl bg-gradient-to-b from-gray-800 to-gray-900 font-extrabold text-center text-white rounded-t-lg py-2'>
                 {misProyectos.name}
               </h2>
-              <a href={misProyectos.deploy} target='_blank'><img src={misProyectos.image} width={600} className='cursor-pointer' /></a>
+              <a href={misProyectos.deploy} target='_blank'>
+                <img
+                  src={misProyectos.image}
+                  width={600}
+                  className='cursor-pointer'
+                />
+              </a>
               <div className='mx-3 py-4'>
                 <p className='font-semibold mb-4'>
                   Technologies: <span>{misProyectos.technologies}</span>
                 </p>
                 <p className='font-semibold'>
                   Deploy 🚀:{' '}
-                  <a href={misProyectos.deploy} className='text-rose-300' target='_blank'>
+                  <a
+                    href={misProyectos.deploy}
+                    className='text-rose-300'
+                    target='_blank'
+                  >
                     CLICK ME!
                   </a>
                 </p>
