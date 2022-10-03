@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
 const Projects = () => {
   const [proyectos, setProyectos] = useState([]);
@@ -7,9 +6,9 @@ const Projects = () => {
   useEffect(() => {
     const obtenerProyectos = async () => {
       const url = '/data/projects.json';
-      const result = await axios.get(url);
-      // console.log(result.data);
-      setProyectos(result.data);
+      const result = await fetch(url);
+      const response = await result.json();
+      setProyectos(response);
     };
     obtenerProyectos();
   }, []);
