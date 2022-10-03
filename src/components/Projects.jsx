@@ -7,7 +7,7 @@ const Projects = () => {
   useEffect(() => {
     const obtenerProyectos = async () => {
       // const url = '/src/projects.json';
-      const result = await axios('/public/projects.json');
+      const result = await axios('./projects.json');
       setProyectos(result.data);
       console.log(result);
     };
