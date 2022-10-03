@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Projects = () => {
   const [proyectos, setProyectos] = useState([]);
 
   useEffect(() => {
     const obtenerProyectos = async () => {
-      try {
-        const url = '/data/projects.json';
-        const result = await fetch(url);
-        const response = await result.json();
-        setProyectos(response);
-      } catch (e) {
-        console.log(e);
-      }
+      const url = '../data/projects.json';
+      const result = await axios.get(url);
+      setProyectos(result.data);
     };
     obtenerProyectos();
   }, []);
+
 
   return (
     <>
@@ -33,24 +30,14 @@ const Projects = () => {
               <h2 className='text-2xl bg-gradient-to-b from-gray-800 to-gray-900 font-extrabold text-center text-white rounded-t-lg py-2'>
                 {misProyectos.name}
               </h2>
-              <a href={misProyectos.deploy} target='_blank'>
-                <img
-                  src={misProyectos.image}
-                  width={600}
-                  className='cursor-pointer'
-                />
-              </a>
+              <a href={misProyectos.deploy} target='_blank'><img src={misProyectos.image} width={600} className='cursor-pointer' /></a>
               <div className='mx-3 py-4'>
                 <p className='font-semibold mb-4'>
                   Technologies: <span>{misProyectos.technologies}</span>
                 </p>
                 <p className='font-semibold'>
                   Deploy 🚀:{' '}
-                  <a
-                    href={misProyectos.deploy}
-                    className='text-rose-300'
-                    target='_blank'
-                  >
+                  <a href={misProyectos.deploy} className='text-rose-300' target='_blank'>
                     CLICK ME!
                   </a>
                 </p>
