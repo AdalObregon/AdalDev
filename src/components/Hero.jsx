@@ -4,12 +4,12 @@ import {
   RiGithubFill,
   RiDribbbleLine,
 } from 'react-icons/ri';
-
+import image from '../assets/adal.png';
 const Hero = () => {
   return (
     <>
       <div className='relative mx-auto bg-gradient-to-b from-violet-500 to-pink-100 rounded-full w-80 h-80 mt-10 overflow-hidden '>
-        <img src={'./src/assets/adal.png'} className='mt-3' />
+        <img src={image} className='mt-3' />
       </div>
       <div className='text-center p-10'>
         <h2 className='xl:text-6xl text-5xl text-violet-600 font-bold dark:text-gray-200'>
