@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-// import json from '/src/projects'
+// import React, { useEffect, useState } from 'react';
+// import axios from 'axios';
+import Proyectos from '../data/projects.json';
 const Projects = () => {
-  const [proyectos, setProyectos] = useState([]);
+  // const [proyectos, setProyectos] = useState([]);
 
-  useEffect(() => {
-    const obtenerProyectos = async () => {
-      // const url = '/src/projects.json';
-      const result = await axios('/src/data/projects.json');
-      setProyectos(result.data);
-      console.log(result);
-    };
-    obtenerProyectos();
-  }, []);
+  // useEffect(() => {
+  //   const obtenerProyectos = async () => {
+  //     // const url = '/src/projects.json';
+  //     const result = await axios(Json);
+  //     setProyectos(result.data);
+  //     console.log(result);
+  //   };
+  //   obtenerProyectos();
+  // }, []);
 
   // useEffect(() => {
   //   const obtenerProyectos = async () => {
@@ -41,7 +41,7 @@ const Projects = () => {
       </h1>
 
       <div className='grid xl:grid-cols-3 xl:mx-28 mx-10 py-20'>
-        {proyectos.map((misProyectos, i) => {
+        {Proyectos.map((misProyectos, i) => {
           return (
             <div
               className='border-2 rounded-xl border-gray-700 dark:border-gray-800 mx-5 bg-gradient-to-b from-gray-800 to-gray-900 text-white mb-10 hover:scale-110 transition delay-150 duration-300 ease-in-out'
