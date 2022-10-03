@@ -4,7 +4,6 @@ const Header = (props) => {
   const { darkMode, setDarkMode } = props;
   return (
     <header className='bg-white px-10 dark:bg-slate-800'>
-      <section className='min-h-screen'>
         <nav className='py-12 mb-12 flex justify-between'>
           <h1 className='xl:text-3xl text-xl dark:text-white'>
             Adal <span className='font-extrabold'>Obregon</span>
@@ -26,7 +25,6 @@ const Header = (props) => {
             </li>
           </ul>
         </nav>
-      </section>
     </header>
   );
 };
