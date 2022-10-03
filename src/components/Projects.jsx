@@ -6,7 +6,7 @@ const Projects = () => {
 
   useEffect(() => {
     const obtenerProyectos = async () => {
-      const url = '/data/projects.json';
+      const url = '../data/projects.json';
       const result = await axios.get(url);
       setProyectos(result.data);
       console.log(result)
@@ -20,6 +20,16 @@ const Projects = () => {
   //     const response = await fetch(url);
   //     const result = await response.json();
   //     setProyectos(result);
+  //   };
+  //   obtenerProyectos();
+  // }, []);
+
+  // useEffect(() => {
+  //   const obtenerProyectos = () => {
+  //     const url = 'data/projects.json';
+  //     fetch(url)
+  //       .then((response) => response.json())
+  //       .then((data) => setProyectos(data));
   //   };
   //   obtenerProyectos();
   // }, []);
