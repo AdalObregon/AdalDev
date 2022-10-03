@@ -6,7 +6,7 @@
       "Reactjs, ",
       " TailwindCSS"
     ],
-    "image": "/src/assets/images/loan-quotation.png",
+    "image": "/public/images/loan-quotation.png",
     "deploy": "https://prestamos-react-iks6.vercel.app/"
   },
   {
@@ -15,7 +15,7 @@
     "technologies": [
       "CSS"
     ],
-    "image": "/src/assets/images/sign-up.png",
+    "image": "/public/images/sign-up.png",
     "deploy": "https://adalobregon.github.io/SignUp/"
   },
   {
@@ -26,7 +26,7 @@
       " TailwindCSS, ",
       " LocalStorage"
     ],
-    "image": "/src/assets/images/veterinary.png",
+    "image": "/public/images/veterinary.png",
     "deploy": "https://citas-react-six.vercel.app/"
   },
   {
@@ -36,7 +36,7 @@
       "Reactjs, ",
       " CSS"
     ],
-    "image": "/src/assets/images/calculator.png",
+    "image": "/public/images/calculator.png",
     "deploy": "https://calculator-cyan-two.vercel.app/"
   },
   {
@@ -49,7 +49,7 @@
       " Fetch, ",
       " LocalStorage"
     ],
-    "image": "/src/assets/images/the-dog-api.png",
+    "image": "/public/images/the-dog-api.png",
     "deploy": "https://the-dog-api-psi.vercel.app/"
   },
   {
@@ -60,7 +60,7 @@
       " CSS, ",
       " JavaScript"
     ],
-    "image": "/src/assets/images/disscount-calculator.png",
+    "image": "/public/images/disscount-calculator.png",
     "deploy": "https://adalobregon.github.io/Discount-Calculator/"
   }
 ]
