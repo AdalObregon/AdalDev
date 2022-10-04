@@ -53,8 +53,8 @@ const Projects = () => {
               <a href={misProyectos.deploy} target='_blank'>
                 <img
                   src={`${misProyectos.image}`}
-                  width={600}
-                  className='cursor-pointer'
+                  // width={600}
+                  className='cursor-pointer w-fit'
                 />
               </a>
               <div className='mx-3 py-4'>
