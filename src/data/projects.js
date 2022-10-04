@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    name: 'loan quotation tool',
+    name: 'Loan quotation tool',
     technologies: ['Reactjs, ', ' TailwindCSS'],
     image: '/images/loan-quotation.png',
     deploy: 'https://prestamos-react-iks6.vercel.app/',
@@ -29,6 +29,13 @@ export default [
   },
   {
     id: 5,
+    name: 'ToDo Machine',
+    technologies: ['ReactJS, ', ' CSS, ', ' LocalStorage'],
+    image: '/images/todo-machine.png',
+    deploy: 'https://todoapp-tau-seven.vercel.app/',
+  },
+  {
+    id: 6,
     name: 'The Dog API',
     technologies: [
       'HTML,',
@@ -41,10 +48,11 @@ export default [
     deploy: 'https://the-dog-api-psi.vercel.app/',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Disscount Calculator',
     technologies: ['HTML, ', ' CSS, ', ' JavaScript'],
     image: '/images/disscount-calculator.png',
     deploy: 'https://adalobregon.github.io/Discount-Calculator/',
   },
+
 ];
