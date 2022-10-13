@@ -18,7 +18,7 @@ const Header = (props) => {
             <li>
               <a
                 className='bg-gradient-to-r from-violet-500 to-purple-500 text-white px-3 py-3 border-none rounded-lg ml-8 font-bold xl:text-2xl text-xl'
-                href='./src/docs/Resume.pdf'
+                href='https://drive.google.com/file/d/19OgZ08U_GkccKpUHjS0Eq6kAjNEl9367/view?usp=sharing'
               target='_blank'>
                 Resume
               </a>
